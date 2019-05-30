@@ -6,9 +6,9 @@
 sudo apt update
 #Instalar paquetes previos que permiten a "apt" usar paquetes mediante HTTPS
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
-#agreguar la clave GPG para el repositorio oficial de Docker 
+#agregar la clave GPG para el repositorio oficial de Docker 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-#Agregar el repositorio de Docker a las fuentes de APT:
+#Agregar el repositorio de Docker a las fuentes de APT
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 #Actualizar lista de paquetes
 sudo apt update
@@ -21,7 +21,6 @@ sudo apt install docker-ce
 sudo usermod -aG docker ${USER}
 #confirmar que se haya agregado el usuario
 id -nG
-echo -e "se agrego el usuario al grupo\n";
 
 #      instalar Docker-compose
 
